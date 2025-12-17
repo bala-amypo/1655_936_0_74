@@ -12,13 +12,19 @@ public class StudentEntity(){
 
 @Id
 @GeneratedValue(strategy=GenerationType.IDENTITY)
-
 private Integer id;
 private String name;
 private String email;
 private String password;
 private Date created;
-
+public StudentEntity(String name,Integer id,String email,String password,Date created){
+    this.name=name;
+    this.id=id;
+    this.email=email;
+    this.password=password;
+    this.created=created;
+}
+public StudentEntity(){
 }
 public String getName(){
     return name;
@@ -52,17 +58,5 @@ public Date getCreated(){
 public Date setCreated(Date created){
     this.created=created;
 }
-
-
-public StudentEntity(String name,Integer id,String email,String password,Date created){
-    this.name=name;
-    this.id=id;
-    this.email=email;
-    this.password=password;
-    this.created=created;
-}
-
-
-public StudentEntity(){
 
 }
