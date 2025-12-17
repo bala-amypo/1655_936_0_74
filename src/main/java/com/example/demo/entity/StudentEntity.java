@@ -17,33 +17,33 @@ public class StudentEntity{
     private String password;
     private Date created;
   
-    public String getName{
+    public String getName(){
         return name;
     }
     public String setName(String name){
         this.name=name;
     }
 
-    public Integer getId{
+    public Integer getId(){
         return id;
     }
     public String setId(Integer id){
         this.id=id;
     }
 
-    public String getEmail{
+    public String getEmail(){
         return email;
     }
     public String setEmail(String email){
         this.email=email;
     }
-    public String getPassword{
+    public String getPassword(){
         return password;
     }
     public String setPassword(String password){
         this.password=password;
     }
-    public Date getCreated{
+    public Date getCreated(){
         return created;
     }
     public Date setCreated(Date created){
