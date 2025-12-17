@@ -2,10 +2,10 @@ package com.example.demo.entity;
 
 import java.util.Date;
 
-import jakarta.presistance.Entity;
-import jakarta.presistance.Id;
-import jakrata.presistance.GenerationType;
-import jakarta.presistance.GeneratedValue;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakrata.persistence.GenerationType;
+import jakarta.persistence.GeneratedValue;
 
 @Entity
 public class StudentEntity(){
