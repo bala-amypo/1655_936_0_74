@@ -27,6 +27,7 @@ public StudentEntity(String name,Integer id,String email,String password,Date cr
 
 public StudentEntity(){
 }
+
 public String getName(){
     return name;
 }
