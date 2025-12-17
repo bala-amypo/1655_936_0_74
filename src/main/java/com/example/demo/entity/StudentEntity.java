@@ -6,6 +6,7 @@ import jakarta.presistance.Entity;
 import jakarta.presistance.Id;
 import jakrata.presistance.GenerationType;
 import jakarta.presistance.GeneratedValue;
+
 @Entity
 public class StudentEntity(){
 
@@ -52,8 +53,16 @@ public Date setCreated(Date created){
     this.created=created;
 }
 
+
+public StudentEntity(String name,Integer id,String email,String password,Date created){
+    this.name=name;
+    this.id=id;
+    this.email=email;
+    this.password=password;
+    this.created=created;
+}
+
+
 public StudentEntity(){
 
 }
-
-public StudentEntity(String name,Integer id,String email,String password,d)
