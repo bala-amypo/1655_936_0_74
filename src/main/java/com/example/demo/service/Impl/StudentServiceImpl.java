@@ -10,7 +10,9 @@ public class StudentServiceImpl implements StudentService{
 //findAll()
 //findById()
 //deleteById()
+//existsById()
     public StudentEntity postdata(StudentEntity stu){
+        
         
     }
 }
