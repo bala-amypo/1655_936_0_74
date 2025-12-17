@@ -1,4 +1,4 @@
-package com.example.demo.service.mpl;
+package com.example.demo.service.impl;
 
 import org.springframework.stereotype.Service;
 import com.example.demo.service.StudentService;
@@ -17,7 +17,7 @@ public class StudentServiceImpl implements StudentService{
 @Override
     public StudentEntity postdata(StudentEntity stu){
         
-        return student.return.save(stu);
+        return student.save(stu);
 
     }
 }
