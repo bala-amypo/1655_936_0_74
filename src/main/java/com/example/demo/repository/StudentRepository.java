@@ -1,4 +1,11 @@
 package.com.example.demo.repository;
 
 
-public interface
+
+
+@Repository
+public interface StudentRepository extends JpaRepository<Stude>{
+
+
+
+}
