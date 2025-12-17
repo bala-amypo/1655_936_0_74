@@ -49,7 +49,7 @@ public class StudentEntity{
     public Date setCreated(Date created){
         this.created=created;
     }
-}
+
   public StudentEntity(String name,Integer id,String email,String password,Date created){
         this.name=name;
         this.id=id;
@@ -60,4 +60,4 @@ public class StudentEntity{
         
     public StudentEntity(){
     }
-
+}
