@@ -39,5 +39,11 @@ public String deleteData(int id){
 public StudentEntity getData(int id){
    return student.findById(id).orElse(null);
 }
+@Override
+ public StudentEntity updateData(int id,StudentEntity entity){
+    if(student.existsById(id)){
+        
+    }
+ }
 
 }
