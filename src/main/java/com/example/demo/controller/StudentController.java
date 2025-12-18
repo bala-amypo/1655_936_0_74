@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import java.util.List;
 import com.example.demo.entity.StudentEntity;
 import com.example.demo.service.StudentService;
+
 @RestController
 public class StudentController{
 
@@ -21,7 +22,7 @@ public List<StudentEntity> getdata(){
 }
 
 @DeleteMapping("/delete/{id}")
- public String deleteData(){
+ public String deleteData(@PathVariable){
    return ser.deleteData
  }
 
