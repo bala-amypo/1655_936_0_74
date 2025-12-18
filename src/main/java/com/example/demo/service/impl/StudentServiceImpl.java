@@ -37,7 +37,7 @@ public String deleteData(int id){
 }
 @Override
 public StudentEntity getData(int id){
-   return student.findAllById(id);
+   return student.findById(id);
 }
 
 }
