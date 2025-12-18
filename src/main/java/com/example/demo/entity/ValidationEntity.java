@@ -9,7 +9,7 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Positive;
 @Entity
-public ValidationEntity{
+public class ValidationEntity{
 
 @Id
 @GeneratedValue(strategy=GenerationType.IDENTITY)
