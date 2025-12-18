@@ -35,5 +35,9 @@ public String deleteData(int id){
   return "Deleted Successfully";
 
 }
+@Override
+public StudentEntity getData(int id){
+   return student.findAllById(id);
+}
 
 }

@@ -9,6 +9,6 @@ StudentEntity postdata(StudentEntity stu);
  
  String deleteData(int id);
 
- StudentEntity
+ StudentEntity getData(int id);
 
 }
