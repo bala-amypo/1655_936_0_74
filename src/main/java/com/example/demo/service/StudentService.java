@@ -11,4 +11,6 @@ StudentEntity postdata(StudentEntity stu);
 
  StudentEntity getData(int id);
 
+ StudentEntity putData(int id)
+
 }
