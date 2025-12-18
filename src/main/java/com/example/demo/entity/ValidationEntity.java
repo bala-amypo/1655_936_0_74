@@ -23,7 +23,7 @@ private String email;
 @Size(min=2,max=6,message="should be less than 6")
 @NotNull
 private String password;
-@Max(35,message="age should be less than 35")
+@Max(35)
 @Positive(message="Age cannot be negative")
 private int age;
 
@@ -34,10 +34,10 @@ private int age;
         this.name=name;
     }
 
-    public Integer getId(){
+    public Long getId(){
         return id;
     }
-    public void setId(Integer id){
+    public void setId(Long id){
         this.id=id;
     }
 
@@ -69,7 +69,7 @@ String name,
 @Size(min=2,max=6,message="should be less than 6")
 @NotNull
  String password,
-@Max(35,message="age should be less than 35")
+@Max(35)
 @Positive(message="Age cannot be negative")
 int age){
         this.name=name;
