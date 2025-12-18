@@ -20,4 +20,9 @@ public List<StudentEntity> getdata(){
     return ser.getAllData();
 }
 
+@DeleteMapping("/delete/{id}")
+ public String deleteData(){
+   return ser.deleteData
+ }
+
 }
