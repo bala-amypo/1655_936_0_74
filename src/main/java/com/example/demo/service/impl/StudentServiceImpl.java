@@ -36,7 +36,7 @@ public String deleteData(int id){
 
 }
 @Override
-public StudentEntity getData(int id){
+public Optional< StudentEntity> getData(int id){
    return student.findById(id);
 }
 
