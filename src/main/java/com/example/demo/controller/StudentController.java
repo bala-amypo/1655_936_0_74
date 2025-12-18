@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,4 +15,6 @@ public class StudentController{
     public StudentEntity sendData(@RequestBody StudentEntity stu){
             return ser.postdata(stu);
 }
+@GetMapping("/get")
+
 }
