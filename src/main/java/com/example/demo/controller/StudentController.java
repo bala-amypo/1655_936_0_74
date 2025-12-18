@@ -33,7 +33,7 @@ public List<StudentEntity> getdata(){
   }
 
 @PutMapping("/put/{id}")
-public StudentEntity putvalue(@Pathvariable int id,@RequestBody StudentEntity entity){
+public StudentEntity putvalue(@PathVariable int id,@RequestBody StudentEntity entity){
 
     return ser.updateData(id,entity);
 }
