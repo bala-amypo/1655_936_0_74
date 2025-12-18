@@ -5,6 +5,6 @@ public interface StudentService{
 
 StudentEntity postdata(StudentEntity stu);
 
-List<St>
+List<StudentEntity> getAllData();
 
 }
