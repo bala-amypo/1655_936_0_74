@@ -27,7 +27,7 @@ public List<StudentEntity> getdata(){
    return ser.deleteData(id);
  }
  @GetMapping("put/{id}")
-  public StudentEntiry putdata(@PathVariable int id){
+  public StudentEntity getdata(@PathVariable int id){
     return ser.getData(id);
   }
 
