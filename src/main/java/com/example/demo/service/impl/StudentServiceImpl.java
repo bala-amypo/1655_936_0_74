@@ -28,5 +28,9 @@ public class StudentServiceImpl implements StudentService{
   return student.findAll();
   }
 
+@Override
 
+String deleteData(int id){
+    
+}
 }
