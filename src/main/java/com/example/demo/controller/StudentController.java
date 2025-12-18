@@ -24,7 +24,7 @@ public List<StudentEntity> getdata(){
 
 @DeleteMapping("/delete/{id}")
  public String DeleteData(@PathVariable int id){
-   return ser.deleteData();
+   return ser.deleteData(id);
  }
 
 }
