@@ -8,12 +8,12 @@ import com.example.demo.service.TimeStampService;
 @Service
 public class TimeStampImpl implements TimeStampService{
 
-@Autowired TimeStampRepository valu;
+@Autowired TimeStampRepository stamp;
 
 @Override
     public TimeStamp postdata(TimeStamp val){
         
-        return valu.save(val);
+        return stamp.save(val);
 
     }
 
