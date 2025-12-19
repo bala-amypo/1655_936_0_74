@@ -8,6 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import java.time.LocalDateTime;
+import jakarta.persistence.PrePersist;
 
 @Entity
 @Data
@@ -22,5 +23,9 @@ private String name;
 private String email;
 private LocalDateTime createdAt;
 private LocalDateTime UpdateAt;
+
+@PrePersist
+
+
 
 }
