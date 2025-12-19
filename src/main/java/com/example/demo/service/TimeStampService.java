@@ -2,7 +2,7 @@ package com.example.demo.service;
 
 import com.example.demo.entity.TimeStamp;
 
-public class TimeStampService{
+public interface TimeStampService{
 
 TimeStamp postdata(TimeStamp val);
 
