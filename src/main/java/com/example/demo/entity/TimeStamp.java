@@ -33,6 +33,7 @@ public class TimeStamp {
     @PrePersist
     public void onCreate() {
         LocalDateTime now = LocalDateTime.now();
+        
         this.createdAt = now;
         this.updatedAt = now;
     }
