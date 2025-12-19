@@ -4,13 +4,16 @@ import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.Data;
-
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import java.time.
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class TimeStamp{
-    
+
 @Id
 @GeneratedValue(strategy=GenerationType.IDENTITY)
 private Long id;
