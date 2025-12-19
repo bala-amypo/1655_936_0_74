@@ -25,6 +25,7 @@ private LocalDateTime createdAt;
 private LocalDateTime UpdateAt;
 
 @PrePersist
+@PreUpdate
 
 public void Oncreate(){
 
@@ -33,7 +34,7 @@ public void Oncreate(){
     this.UpdateAt=now;
 }
 
-@PreUpdate()
+
 
 public void Onupdate(){
  LocalDateTime now =new LocalDateTime().now();
