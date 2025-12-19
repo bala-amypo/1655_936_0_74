@@ -30,15 +30,15 @@ public class TimeStamp {
     private LocalDateTime updatedAt;
 
     @PrePersist
-    public void onCreate() {
+    protected void onCreate() {
         LocalDateTime now = LocalDateTime.now();
         this.createdAt = now;
         this.updatedAt = now;
     }
 
     @PreUpdate
-    public void onUpdate() {
-        LocalDateTime now = LocalDateTime.now();
+    protected void onUpdate() {
+        // LocalDateTime now = LocalDateTime.now();
         this.updatedAt =now;
     }
 }
