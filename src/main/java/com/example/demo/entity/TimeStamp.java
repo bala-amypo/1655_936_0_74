@@ -1,47 +1,43 @@
 package com.example.demo.entity;
 
 import jakarta.persistence.Entity;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.Data;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import java.time.LocalDateTime;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
+
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.Data;
+
+import java.time.LocalDateTime;
+
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class TimeStamp{
+public class TimeStamp {
 
-@Id
-@GeneratedValue(strategy=GenerationType.IDENTITY)
-private Long id;
-private String name;
-private String email;
-private LocalDateTime createdAt;
-private LocalDateTime UpdateAt;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-@PrePersist
-@PreUpdate
+    private String name;
+    private String email;
 
-public void Oncreate(){
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 
-    LocalDateTime now =new LocalDateTime().now();
-    this.createdAt=now;
-    this.UpdateAt=now;
-}
+    @PrePersist
+    public void onCreate() {
+        LocalDateTime now = LocalDateTime.now();
+        this.createdAt = now;
+        this.updatedAt = now;
+    }
 
-
-
-public void Onupdate(){
- LocalDateTime now =new LocalDateTime().now();
- this.UpdateAt=now;
-
-}
-
-
-
+    @PreUpdate
+    public void onUpdate() {
+        this.updatedAt = LocalDateTime.now();
+    }
 }
