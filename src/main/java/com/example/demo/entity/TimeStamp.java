@@ -29,7 +29,8 @@ private LocalDateTime UpdateAt;
 public void Oncreate(){
 
     LocalDateTime now =new LocalDateTime();
-    
+    this.createdAt=now
+
 }
 
 }
