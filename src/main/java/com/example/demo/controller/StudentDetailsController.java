@@ -15,7 +15,7 @@ public class StudentDetailsController {
     private StudentDetailsService ser;
 
     @PostMapping("/post6")
-    public StudentDetails sendData(@RequestBody StudentDetails stu) {
-        return ser.postdata(stu);
+    public StudentDetails sendData2(@RequestBody StudentDetails stu) {
+        return ser.postdata2(stu);
     }
 }
