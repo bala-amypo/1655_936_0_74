@@ -15,7 +15,7 @@ public class StudentIdDetailsController {
     private StudentIdDetailsService ser;
 
     @PostMapping("/post7")
-    public StudentIdDetails sendData(@RequestBody StudentIdDetails stu) {
-        return ser.postdata(stu);
+    public StudentIdDetails sendData1(@RequestBody StudentIdDetails stu) {
+        return ser.postdata1(stu);
     }
 }
