@@ -28,9 +28,13 @@ private LocalDateTime UpdateAt;
 
 public void Oncreate(){
 
-    LocalDateTime now =new LocalDateTime();
-    this.createdAt=now
-
+    LocalDateTime now =new LocalDateTime().now();
+    this.createdAt=now;
+    this.UpdateAt=now;
 }
+
+@PreUpdat
+
+
 
 }
