@@ -14,17 +14,18 @@ import jakarta.persistence.OneToOne;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@OneToOne
-@JoinColumn(name="")
-private StudentDetails
+
 public class StudentIdDetails{
+
 
   @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
     private String idcardnumber;
     private Integer student_id;
- 
+ @OneToOne
+@JoinColumn(name="student_id")
+private StudentDetails student;
 
 
 }
