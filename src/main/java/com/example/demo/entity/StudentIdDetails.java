@@ -26,7 +26,7 @@ public class StudentIdDetails{
     private String idcardnumber;
     private Integer student_id;
  @OneToOne
-@JoinColumn(name="student_id")
+@JoinColumn(name="stu_id")
 private StudentDetails student;
 
 
