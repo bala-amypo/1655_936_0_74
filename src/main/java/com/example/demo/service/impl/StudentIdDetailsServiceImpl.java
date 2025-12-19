@@ -8,12 +8,11 @@ import com.example.demo.entity.StudentEntity;
 import java.util.List;
 
 @Service
-public class StudentServiceImpl implements StudentService{
+public class StudentIdDetailsServiceImpl implements StudentIdDetailsService{
 @Autowired StudentIdDetailsRepository student;
+@Override
 public StudentIdDetails postdata(StudentIdDetails stu){
 
      return student.save(stu);
 }
-
-
 }
