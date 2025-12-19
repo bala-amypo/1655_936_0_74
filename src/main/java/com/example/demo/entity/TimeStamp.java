@@ -9,7 +9,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import java.time.LocalDateTime;
 import jakarta.persistence.PrePersist;
-
+import jakarta.persistence.PreUpdate;
 @Entity
 @Data
 @AllArgsConstructor
@@ -33,7 +33,13 @@ public void Oncreate(){
     this.UpdateAt=now;
 }
 
-@PreUpdat
+@PreUpdate()
+
+public void Onupdate(){
+ LocalDateTime now =new LocalDateTime().now();
+ this.UpdateAt=now;
+
+}
 
 
 
