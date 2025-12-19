@@ -11,7 +11,7 @@ import java.util.List;
 public class StudentDetailsServiceImpl implements StudentDetailsService{
 @Autowired StudentDetailsRepository student;
 @Override
-public StudentDetails postdata1(StudentDetails stu){
+public StudentDetails postdata2(StudentDetails stu){
 
      return student.save(stu);
 }

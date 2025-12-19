@@ -10,7 +10,7 @@ import java.util.List;
 public class StudentIdDetailsServiceImpl implements StudentIdDetailsService{
 @Autowired StudentIdDetailsRepository student;
 @Override
-public StudentIdDetails postdata2(StudentIdDetails stu){
+public StudentIdDetails postdata1(StudentIdDetails stu){
 
      return student.save(stu);
 }
