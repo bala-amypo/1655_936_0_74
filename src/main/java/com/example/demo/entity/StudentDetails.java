@@ -1,8 +1,20 @@
 package com.example.demo.entity;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.GeneratedValue;
+import lombok.Data;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@OneToOne
 public class StudentDetails{
 
- @Id
+@Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
     private String name;
