@@ -26,6 +26,10 @@ private LocalDateTime UpdateAt;
 
 @PrePersist
 
+public void Oncreate(){
 
+    LocalDateTime now =new LocalDateTime();
+    
+}
 
 }
