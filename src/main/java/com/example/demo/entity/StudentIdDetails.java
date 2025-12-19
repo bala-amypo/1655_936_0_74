@@ -7,13 +7,16 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import jakarta.persistence.OneToOne;
 @Entity
 @Data
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-
+@OneToOne
+@JoinColumn(name="")
+private StudentDetails
 public class StudentIdDetails{
 
   @Id
