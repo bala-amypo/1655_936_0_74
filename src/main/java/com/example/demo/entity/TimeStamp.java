@@ -1,19 +1,4 @@
-package com.example.demo.entity;
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.PrePersist;
-import jakarta.persistence.PreUpdate;
-
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.Data;
-
-import java.time.LocalDateTime;
-
-@Entity
+`@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -30,15 +15,14 @@ public class TimeStamp {
     private LocalDateTime updatedAt;
 
     @PrePersist
-    protected void onCreate() {
+    public void onCreate() {
         LocalDateTime now = LocalDateTime.now();
         this.createdAt = now;
         this.updatedAt = now;
     }
 
     @PreUpdate
-    protected void onUpdate() {
-        // LocalDateTime now = LocalDateTime.now();
-        this.updatedAt =now;
+    public void onUpdate() {
+        this.updatedAt = LocalDateTime.now();
     }
 }
