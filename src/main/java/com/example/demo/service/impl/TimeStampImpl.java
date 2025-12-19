@@ -7,15 +7,12 @@ import com.example.demo.entity.TimeStamp;
 @Service
 public class TimeStampServiceImpl implements TimeStampService{
 
-
-
-
 @Autowired TimeStampRepository valu;
 
 @Override
-    public TimeStamp postdata(TimeStamp valu){
+    public TimeStamp postdata(TimeStamp val){
         
-        return val.save(valu);
+        return valu.save(val);
 
     }
 
