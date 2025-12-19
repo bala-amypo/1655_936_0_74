@@ -5,7 +5,7 @@ import com.example.demo.repository.TimeStampRepository;
 import com.example.demo.entity.TimeStamp;
 
 @Service
-public class TimeStampServiceImpl implements TimeStampService{
+public class TimeStampImpl implements TimeStampService{
 
 @Autowired TimeStampRepository valu;
 
