@@ -4,6 +4,6 @@ import com.example.demo.entity.TimeStamp;
 
 public class TimeStampService{
 
-TimeStamp postdata(ValidationEntity val);
+TimeStamp postdata(TimeStamp val);
 
 }
